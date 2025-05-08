@@ -149,12 +149,17 @@ body{
   .main{
     flex-direction: column-reverse;
     position: absolute;
-    margin-left: 1.5rem;
+    margin-left: 10px;
     gap: 5rem;
   }
   .header{
-    margin-right: 0.8rem;
-    margin-left: 1.5;
+    padding: 1.5rem;
+    margin: 0;
+  }
+  .right-background{
+    width: 50%;
+    height: 400px;
+    max-width: 100vw;
   }
   .nav{
     display: none;
@@ -163,25 +168,22 @@ body{
     display: block;
   }
   .illustration-section{
-    transform: translateX(10%);
+    transform: translateX(8%);
   }
   .first-intro{
-    margin-left: 1.5rem;
+    margin-bottom: 1rem;
   }
   .main-title{
-    text-align: left;
-    font-size: 3rem;
-    margin-left: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 0.7rem;
+    line-height: 1.2;
   }
   .purpose{
-    margin-left: 2rem;
     font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   .schedule{
-    margin-left: 1.5rem;
     margin-bottom: 3rem;
   }
   .schedule .preview{
