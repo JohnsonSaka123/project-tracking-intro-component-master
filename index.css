@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+.header{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.harmburger-menu{
+  display: none;
+}
+.brand-logo{
+  height: auto;
+  width: 100%;
+}
+.brand-logo img{
+  max-width: 100%;
+  object-fit: cover;
+  block-size: auto;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  align-self: flex-end;
+}
+.nav ul{
+  display: flex;
+  gap: 1rem;
+}
+.nav ul li{
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.nav li a{
+  text-decoration: none;
+  color: hsl(230, 29%, 20%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.right-background{
+  background-color: hsl(231, 7%, 65%);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 70vh;
+  right: 0;
+  border-bottom-left-radius: 2.5rem;
+}
+.main{
+  display: flex;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+.intro-section{
+  flex: 1 1 50%;
+
+}
+.illustration-section{
+  flex: 1 1 50%;
+  transform: translateX(15%);
+}
+.illustration-section img{
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+.first-intro{
+  color: hsl(231, 7%, 65%);
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  margin-bottom: 0.8rem;
+}
+.first-intro span{
+  background-color: hsl(230, 29%, 20%);
+  color: hsl(207, 33%, 95%);
+  padding: 3px 4px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 0.4rem;
+  letter-spacing: 0;
+}
+.main-title{
+  color: hsl(230, 29%, 20%);
+  font-family: "Barlow Condensed",
+    sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.purpose{
+  color: hsl(230, 11%, 40%);
+  font-family: "Barlow",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 240px;
+  margin-bottom: 3rem;
+}
+.schedule{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  color: hsl(231, 7%, 65%);
+  font-family: "Barlow",
+      sans-serif;
+  
+}
+.schedule .preview{
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.schedule .schedule-btn{
+  padding: 8px 12px;
+  border: none;
+  background-color: hsl(0, 100%, 68%);
+  color: white;
+  font-family: "Barlow";
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+@media(max-width : 768px){
+  body{
+    height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+  }
+  .main{
+    flex-direction: column-reverse;
+    position: absolute;
+    margin-left: 1.5rem;
+    gap: 5rem;
+  }
+  .header{
+    margin-right: 0.8rem;
+    margin-left: 1.5;
+  }
+  .nav{
+    display: none;
+  }
+  .harmburger-menu{
+    display: block;
+  }
+  .illustration-section{
+    transform: translateX(10%);
+  }
+  .first-intro{
+    margin-left: 1.5rem;
+  }
+  .main-title{
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .purpose{
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  .schedule{
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .schedule .preview{
+    font-size: 0.8rem;
+  }
+  .schedule-btn{
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+}
