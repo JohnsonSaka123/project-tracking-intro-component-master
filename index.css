@@ -170,6 +170,10 @@ body{
   .illustration-section{
     transform: translateX(8%);
   }
+  .intro-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .first-intro{
     margin-bottom: 1rem;
   }
